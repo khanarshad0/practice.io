@@ -124,14 +124,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
                     <input type="text" class="form-control border-0" placeholder="Keyword">
                     <div class="input-group-append">
-                        <button class="input-group-text bg-primary text-dark border-0 px-3", onclick="myFunction()">Search</button>
+                        <button class="input-group-text bg-primary text-dark border-0 px-3">Search</button>
 <script>
-function myFunction() {
- var dataLayer= {
+var button = document.getElementByClassName("input-group-text bg-primary text-dark border-0 px-3");
+button.addEventListener(
+	'click',
+	function() {
+dataLayer= {
 'event': 'event_name'
 };
  console.log(dataLayer);
 }
+
 </script>
 
                     </div>
