@@ -46,8 +46,9 @@ digitalData = ({
 	<script>
 window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
-    'event': 'pageView',
-    'pageName': '$title'
+    'event': 'PageView',
+    'pageName': document.title,
+'pageLocation': document.href
 });
 </script>
 	
