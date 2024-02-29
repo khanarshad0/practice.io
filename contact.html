@@ -39,7 +39,7 @@ window.dataLayer = window.dataLayer || [];
 window.dataLayer.push({
     'event': 'PageView',
     'pageName': document.title,
-'pageLocation': document.href
+'pageLocation': location.href
 });
 </script>
     <!-- Topbar Start -->
@@ -47,14 +47,6 @@ window.dataLayer.push({
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ6HRRX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-	    <script>
-		    dataLayer.push({
-      "event": "navigation_click",
-      "eventCategory": "Contact",
-      "eventAction": "data-1-click"
-    });
-  });
-	</script>
     <div class="container-fluid d-none d-lg-block">
         <div class="row align-items-center bg-dark px-lg-5">
             <div class="col-lg-9">
@@ -128,6 +120,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="category.html" class="nav-item nav-link">Category</a>
                     <a href="single.html" class="nav-item nav-link">Single News</a>
+			<script>
+				<a href="#" onclick="dataLayer.push({
+    'event': 'navigation_click',
+    'page_Title': docuent.title,
+    'pageLocation': location_href
+});
+			</script>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
                         <div class="dropdown-menu rounded-0 m-0">
