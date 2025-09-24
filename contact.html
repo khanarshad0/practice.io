@@ -52,13 +52,17 @@ window.dataLayer.push({
 'pageLocation': location.href
 });
 </script>
-<script>
-gtag('event', 'screenView', {
-'server_container_url': 'https://dgiydbtz.in.stape.io',
-  'app_name': 'myAppName',
-  'screen_name': 'Home'
-});
-		</script>
+</script>
+	<iframe id="iframe2" width="1" height="1" src="iframe2.html" onload="track()"></iframe>
+
+<div class="container"> 
+	<p>Your ID is <span id="trackingId"></span>.</p>
+    
+<br><br>
+    
+</div> <!-- close container -->   
+
+<script src="etagcustom.js"></script>
     <!-- Topbar Start -->
 	<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ6HRRX"
